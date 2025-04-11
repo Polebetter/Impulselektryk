@@ -1,0 +1,255 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #393a3a;
+  min-height: 100vh;
+}
+
+.navbar1 {
+  display: flex; ;
+  justify-content: flex-start;
+  background-color: #3d3c3c;
+  padding: 5px 5px 0px 5px;
+  color: white;
+  justify-content: center;
+  gap: 15px; 
+  align-items: center;
+}
+
+.nav-item1{
+  display:flex;
+  gap: 10px;
+  margin-left: 5%;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item2, .nav-item3{
+  display:flex;
+  gap: 10px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  align-items: center;
+}
+
+.nummber{
+  text-align: center;
+  display: flex;
+}
+
+/* 🔹 Button Styles */
+.nav-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1c1c1f; /* Match card background */
+  color: #d0d0f7; /* Match text color */
+  border: 2px solid #d0d0f7; /* Add border for consistency */
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 8px; /* Slightly more rounded corners */
+  margin-left: auto;
+  margin-right: 3%;
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.nav-button a{
+  color: #d0d0f7; /* Match button text color */
+  text-decoration: none;
+}
+
+.nav-button:hover {
+  background-color: #d0d0f7; /* Invert colors on hover */
+  color: #1c1c1f;
+  border-color: #1c1c1f;
+}
+
+/*koniec header*/
+
+  /* Navbar styling */
+  .navbar {
+    display: flex;
+    align-items: center;
+    background-color: #414344;
+    padding-top: 5px;
+    color: white;
+    justify-content:space-evenly;
+    -webkit-box-shadow: 3px 8px 24px 3px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 3px 8px 24px 3px rgba(66, 68, 90, 1);
+    box-shadow: 3px 8px 24px 3px rgba(66, 68, 90, 1);
+    position: relative; /* Ensure child elements are positioned relative to the navbar */
+}
+
+.navbar img {
+    width: 10%; 
+    
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration:dashed;
+    font-size: 25px;
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: absolute; /* Position relative to the navbar */
+  right: 30px; /* Align to the right edge of the navbar */
+  top: 50%; /* Center vertically within the navbar */
+  transform: translateY(-50%); /* Adjust for perfect vertical centering */
+}
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+/* Active class to show the menu */
+.nav-links.active {
+    display: flex;
+}
+
+/*koniec navabar*/
+
+h1 {
+  font-weight: bold;
+  font-size: 3em;
+  margin-bottom: 20px; /* Reduce bottom margin */
+  margin-top: 3%; /* Reduce top margin */
+  margin-left: 25%;
+  margin-right: 25%; 
+  text-align: left; 
+  color:aliceblue;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.section {
+  color: aliceblue;
+  margin-left: 25%;
+  margin-right: 25%; 
+  text-align: left; 
+  font-family: 'Times New Roman', Times, serif;
+  font-size:larger;
+  line-height: 1.4; /* Reduce line height for tighter spacing */
+}
+
+.section ul {
+list-style-type: disc;
+margin-left: 30px;
+color: aliceblue;
+}
+
+.section ul li {
+  margin-bottom: 5px; /* Reduce spacing between list items */
+  font-size: 1em;
+}
+
+.footer {
+  margin-top: 10%;
+  color: #d0d0f7;
+  font-size: 15px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  padding: 15px;
+  background-color: #414344;
+}
+
+footer {
+  margin-top: 40px; /* Reduce top margin */
+  font-size: 0.9em;
+  color: #888;
+  text-align: center;
+}
+
+.resume-link {
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 0;
+    justify-content: center; 
+    text-align: center;
+  }
+  
+  .content {
+    align-items: center;
+  }
+  
+  h1 {
+    font-size: 2em; /* Adjust font size for smaller screens */
+    margin: 10px; /* Reduce margins */
+    text-align: center; /* Center align text */
+  }
+
+  h2 {
+    font-size: 1,5em; /* Adjust font size for smaller screens */
+    margin: 10px; /* Reduce margins */
+    text-align: left; /* Center align text */
+  }
+  
+  .section {
+    margin: 15px; /* Reduce side margins */
+    font-size: 1em; /* Adjust font size */
+    text-align: left; /* Justify text for better readability */
+  }
+  
+  .section ul {
+    margin-left: 0px;
+    padding-left: 0px; /* Remove left padding */
+    list-style-position: inside; /* Change bullet position */
+  }
+  
+  .section ul li {
+    font-size: 0.9em; /* Slightly smaller font size */
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Adjust to open downward */
+    left: 0; /* Align to the left edge */
+    background-color: #414344;
+    width: 100%; /* Full width */
+    text-align: center;
+    padding: 10px;
+    border-radius: 0 0 5px 5px; /* Rounded bottom corners */
+  }
+  
+  .navbar img {
+    width: 100px;
+    height: auto;
+  }
+  
+  .nav-links a {
+    display: block;
+    padding: 10px;
+  }
+  
+  .hamburger {
+    display: flex; /* Show hamburger in mobile view */
+    margin-top: 0%;
+    padding-top: 0%;
+  }
+}
+
