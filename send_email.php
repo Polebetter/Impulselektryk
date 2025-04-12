@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     // Validate inputs
     if (empty($name) || empty($email) || empty($message)) {
-        echo "Wszystkie pola są wymagane.";
+        echo "Wszystkie pola są wymagane."; 
         exit;
     }
 
