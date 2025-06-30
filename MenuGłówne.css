@@ -855,6 +855,16 @@ body {
   }
 }
 
+.zobacz-item h4 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.2em;
+  font-weight: bold;
+}
 
+.zobacz-item p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 0.95em;
+  font-weight: normal;
+}
 
 
